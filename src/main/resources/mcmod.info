@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ShinobiCraft",
+  "name": "ShinobiCraft",
+  "description": "A modded experience for Minecraft Ninja's everywhere.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Phantasm23"],
+  "credits": "Thanks to everyone that helped. You know who you are!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
