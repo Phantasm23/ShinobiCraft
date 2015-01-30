@@ -49,19 +49,24 @@ public class ShinobicraftMain {
 		
 		ShinobicraftMain.debug("isDebuggingEnabled=" + isDebugEnabled);
 		ShinobicraftMain.debug("isModEnabled=" + isModEnabled);
-	}
-
-	@EventHandler
-	public void init(FMLInitializationEvent event) {
 		
 		if (!this.isModEnabled)
 			return;
 
 		ModBlocks.init();
 		ModItems.init();
+		ModEntities.init();
 		
 		//Fuel Handler
 		GameRegistry.registerFuelHandler(new FuelHandler());
+		
+		proxy.registerRenderers();
+		
+	}
+
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		
 	}
 
 	@EventHandler
